@@ -1,33 +1,16 @@
 <script setup>
 
 import { ref } from 'vue';
-
+import { todoList } from '@/store';
 
 const task = ref("a sample task")
 const selected = ref("")
 
-const todoList = ref([
-    {
-        task: "get the dog out",
-        createdAt: "7 AM Monday",
-        priority: "1"
-    },
-    {
-        task: "get the cat out",
-        createdAt: "8 PM Saturday",
-        priority: "2"
-    },
-    {
-        task: "get the horse out",
-        createdAt: "9 PM Sunday",
-        priority: "3"
-    },
-])
+
 
 const addTask = (task, selected) => {
     const createdAt = new Date().toDateString()
-    todoList.value.push({task, createdAt:createdAt, priority:selected})
-    console.log(todoList.value)
+    todoList.push({task, createdAt:createdAt, priority:selected})
 }
 
 </script>

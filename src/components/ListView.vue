@@ -1,10 +1,6 @@
 <script setup>
 
-import { ref } from 'vue';
-
-
-
-
+import {todoList} from '../store.js'
 
 
 

@@ -2,7 +2,10 @@
 
 import {todoList} from '../store.js'
 
-
+const del = (todoID) => {
+    const position = todoList.indexOf(todoID)
+    todoList.splice(position, 1)
+}
 
 </script>
 
@@ -17,6 +20,7 @@ import {todoList} from '../store.js'
                 <th scope="col">Task</th>
                 <th scope="col">Created At</th>
                 <th scope="col">Priority</th>
+                <th scope="col">Action</th>
             </tr>
         </thead >
         <tbody>
@@ -24,6 +28,7 @@ import {todoList} from '../store.js'
                 <th>{{ todo.task }}</th>
                 <td>{{ todo.createdAt }}</td>
                 <td>{{ todo.priority }}</td>
+                <td><button class="del-btn" @click="del(todo)">Del</button></td>
             </tr>
         </tbody>
        </table>
@@ -41,5 +46,11 @@ th, td{
     padding: 8px 10px;
 }
 
+.del-btn{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+}
 
 </style>

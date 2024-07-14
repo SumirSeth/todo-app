@@ -9,7 +9,7 @@ import ListView from './components/ListView.vue'
     <!-- Main contains list view and action view in a flexbox row container-->
     
     <ActionView class="action"></ActionView>
-    <ListView class="list flex justify-center"></ListView>
+    <ListView class="list "></ListView>
      
   </div>
 </template>

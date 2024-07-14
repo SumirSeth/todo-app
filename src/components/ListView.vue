@@ -41,9 +41,17 @@ table{
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
 }
-th, td{
+th{
     border: 1px solid rgb(160 160 160);
     padding: 8px 10px;
+}
+td{
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+tr {
+    height: 2.5vh;
 }
 
 .del-btn{

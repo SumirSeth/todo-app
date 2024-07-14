@@ -10,7 +10,7 @@ import TodoButton from './TodoButton.vue'
 
 <template>
     <!--The action view contains MultiGreeting and TodoButton-->
-    <div class="action-view flex flex-col bg-slate-300 text-center">
+    <div class="action-view flex flex-col bg-slate-300 text-center justify-end">
         <MultiGreeting class=""></MultiGreeting>
         <TodoButton class=""></TodoButton>
     </div>  

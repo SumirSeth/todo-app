@@ -17,11 +17,14 @@ import ListView from './components/ListView.vue'
 <style scoped>
 .list {
   width: calc((70vh + 30vw)/1.7);
+  height: 80vh;
+  overflow-y: scroll;
   margin: 10px;
 }
 
 .action {
   width: calc((70vh + 30vw)/1.7);
+  height: 80vh;
   margin: 10px;
 
 }

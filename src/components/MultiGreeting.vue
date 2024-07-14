@@ -351,7 +351,7 @@ const greeting = (username) =>{
 <style scoped>
  
 .greet{
-    font-size:calc((5vh + 3vw) / 1.2) ;
+    font-size:calc((5vh + 3vw) / 1.35) ;
 }
 
 </style>
